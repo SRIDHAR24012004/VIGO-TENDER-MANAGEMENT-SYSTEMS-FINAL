@@ -1,0 +1,72 @@
+<html>
+<head>
+	<script src="index.js">
+
+function validate()
+ {
+
+	  if(document.f1.ex_amt.value=="")
+     {
+		  alert("enter amount");
+		  document.f1.tender_amt.focus();
+		return false;
+	 }
+	 if((document.f1.tender_amt.value)>=200)
+	 {
+		 alert("enter min amount than exp amt");
+		 document.f1.tender_amt.focus();
+		 return false;
+	 }
+	 else
+		 return true;
+ }
+
+
+		
+ 
+
+
+ </script>
+ </head>
+ <body>
+ <form name="f1" action="Add_tender.jsp?pid=<%=pid%>" method="post" align="center" onsubmit="return validate()" >
+
+ <table border="1" align="center">
+ <tr>
+
+
+ <td> Project  Description</td>
+ <td> <TEXTAREA NAME="pro_desc" ROWS="10" COLS="50" readonly> TENDER FOR SECURITY MANAGEMENT </TEXTAREA></td>
+
+ <tr>
+ <tr>
+ <td> Expected amount</td>
+ <td><input type="text" value=15000 name="ex_amt" readonly ></td>
+  </tr>
+ <tr>
+
+ <td>Enter Your Tender Amount</td> 
+ <td><input type="text" name="tender_amt"></td>
+ </tr>
+ 
+ <TR >
+ 	
+ </TR>
+ 
+ </table>
+ <a href="TENDER PLACED SUCCESSFULLY.HTML"><button type="button">submit</button></a>
+ </form>
+ 
+ </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> VIEW PROJECTS</title>
+  </head>
+  <body bgcolor="lightcyan">
+    
+  </body>
+</html>
+

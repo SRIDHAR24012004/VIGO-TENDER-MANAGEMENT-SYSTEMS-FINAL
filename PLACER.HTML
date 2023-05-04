@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>VIGO TENDER MANAGEMENT SYSTEMS</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="index.js">
+function validate()
+ {
+
+	  if(document.f1.project_id.value=="")
+     {
+		  alert("enter project id");
+		  document.f1.project_id.focus();
+		return false;
+	 }else
+	
+	  if(document.f1.project_title.value=="")
+     {
+		  alert("enter project title");
+		  document.f1.project_title.focus();
+		return false;		
+	 }else
+	   if(document.f1.username.value=="")
+     {
+		  alert("enter username");
+		  document.f1.username.focus();
+		return false;
+	 }  else
+	 if(document.f1.languageType.value=="")
+     {
+		  alert("enter lag type");
+		  document.f1.languageType.focus();
+		return false;
+	 }else  if(document.f1.databaseName.value=="")
+     {
+		  alert("enter db name");
+		  document.f1.databaseName.focus();
+		return false;
+	 } else if(document.f1.exp_amount.value=="")
+     {
+		  alert("enter amount");
+		  document.f1.exp_amount.focus();
+		return false;
+	 }
+	  else if(document.f1.project_desc.value=="")
+     {
+		  alert("enter project description");
+		  document.f1.project_desc.focus();
+		return false;
+	 }
+	 else 
+	 return true;
+ }
+ </script>
+</head>
+<body>
+<div id="content">
+<div id="back">
+<!-- header begins -->
+<div id="header"> 
+	<div id="logo">
+		<h1 align="center"><a href="#"> <FONT SIZE="20" COLOR="black">VIGO TENDER MANAGEMENT SYSTEMS</FONT> 
+	</div>
+  <div id="menu">
+		<ul>
+			<li id="button1"><a href="ADMIN.HTML"  title="">HOME</a></li>
+			<li id="button2"><a href="ADMIN.HTML"  title="">BACK PAGE</a></li>
+			<li id="button5"><a href="ABOUT.HTML" title="">ABOUT</a></li>
+			<li id="button6"><a href="CONTACT.HTML" title="">CONTACT</a></li>
+		</ul>
+ </div>
+</div>
+<table border="5"  align="center">
+<tr>
+<td>
+<fieldset>
+<p>
+<font size="8">
+<legend>
+<font color="black" size="3"><b>Fill The Details</b></font>
+</legend>
+</font>
+</p>
+<title>signin</title>
+<form name="f1" action="Add_Prj.jsp" method="post" onSubmit="return validate()" >
+
+<font color="black" size="3">
+<b><pre>Projectid       :  </b><input type="text" name="project_id" size="20">*</pre>
+
+<b><pre>Project_title   :  </b><input type="text" name="project_title" size="20">*</pre>
+
+<b><pre>UserName        :  </b><input type="text" name="username" size="20">*</pre>
+
+<b><pre>LanguageType    :  </b><select name="languageType"><option value="j2se">J2SE</option><option value="C/C++">C/C++</option><option value=".Net">.Net</option><option value="PHP">PHP</option><option value="html">HTML</option><option value="Jsp/Asp">JSP/ASP</option></select></pre>
+
+<b><pre>DatabaseName    :  </b><select name="databaseName"><option value="sql">SQL</option><option value="access">ACCESS</option><option value="oracle">ORACLE</option><option value="db2">DB2</option></select></pre>
+
+<b><pre>Expected Amount :  </b><input type="text" name="exp_amount" size="20">*</pre>
+<b><pre>project Details :  </b><TEXTAREA NAME="project_desc" ROWS="5" COLS="15"></TEXTAREA>*</pre>
+</font>
+<table border="0">
+<tr><td>
+
+	<a href="placed successfully.html"><button type="button">submit</button></a>
+
+<input type="reset" value="reset"></td></tr></table>
+</form>
+
+</fieldset> 
+</td>
+</tr>
+</table>
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: lightcyan;}
+h1   {color: blue;}
+p {color: red;}
+</style>
+
+<!-- header ends -->
+<!-- content begins -->
+ 
+<div id="footer">
+Copyright &copy; 2023.Privacy Policy | Terms of Use
+	</div>
+<!-- footer ends-->
+
+</html>

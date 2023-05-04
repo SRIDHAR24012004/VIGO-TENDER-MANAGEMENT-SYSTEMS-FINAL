@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+	
+	<img src="Tender management.jpg" alt="js.basic" width="1500px" height="300px">
+	
+</body>
+</html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>VIGO TENDER MANAGEMENT SYSTEMS</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+function checkForm(formObj) 
+{
+     if(checkUserName(formObj.userName.value)) 
+       {
+        return checkPassword(formObj.password.value);
+       }
+  return false;
+}
+function checkUserName(age)
+{
+if(age.length==0)
+   {
+      window.alert("please enter user name");
+      return false;  
+    }
+ return true;
+}
+function checkPassword(parameter)
+{
+ if(parameter.length==0)
+  { 
+  window.alert("please Enter password.");
+  return false;
+   }
+return true;
+}
+
+</script>
+</head>
+<body >
+	
+<div id="content">
+<div id="back">
+<!-- header begins -->
+<div id="header"> 
+	
+		<h1 align="center"> <FONT SIZE="20" COLOR="#000000">VIGO TENDER MANAGEMENT SYSTEMS</FONT> 
+  <div id="menu">
+		<ul>
+			<li id="button1"><a href="HOME PAGE.HTML" title="">Home</a></li>
+			<li id="button4"><a href="SIGN UP.HTML" title="about">SING UP</a></li>
+			<li id="button5"><a href="ADMIN SIGNING .HTML" title="">ADMIN</a></li>
+		</ul>
+ </div>
+</div>
+<form name="myForm" method="post" onsubmit="return checkForm(this)" action="signing.php">
+
+
+<table border="0" align="center">
+<tr><td>
+<font size="4">
+<legend>
+<font color="bisque" size="3">
+</legend>
+</font></td></tr>
+<tr><td>
+
+</table>
+
+<table border="0" width="40%" align="center">
+<tr>
+<td>
+<fieldset>
+<p>
+<font size="5">
+<legend>
+<font color="black" size="5"><b>SIGN IN AS</b></font>
+</legend>
+</font>
+</p>
+<title>signin</title>
+<font color="black" size="5">
+ USERNAME :<input type="text"  name="userName" size="20">*<br><br></font>
+
+
+<font color="black" size="5">
+ PASSWORD :<input type="password" value="" name="password" size="20">*</font><br><br>
+<font color="black" size="5">     USERTYPE    :&nbsp;<select name="userType" size="1">
+			<option value="buyer">Buyer</option>
+			
+		</select></font><br>
+		<br>
+		<a href="BUYER.HTML"><button type="button">submit</button></a>
+<br>
+		<br>
+		<font color=#aaff00><b>NEW USER?</b></font><br>
+		<br>
+
+       <a href="SIGN UP.HTML"><font color=#aaff00 size="5">Register
+		now!</font></a>
+</table>
+</form>
+<!-- header ends -->
+<!-- content begins -->
+ </div>
+ </div>
+
+<div id="footer">
+Copyright &copy; 2023.Privacy Policy | Terms of Use
+	</div>
