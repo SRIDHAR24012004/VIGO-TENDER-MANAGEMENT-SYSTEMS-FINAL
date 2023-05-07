@@ -1,40 +1,237 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Sign up / Login Form</title>
-  <link rel="stylesheet" href="style5.css">
-
-</head>
-<body>
-
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Slide Navbar</title>
-	<link rel="stylesheet" type="text/css" href="style5.css">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylecss">
+	<title>
+		
+	</title>
 </head>
 <body>
-	<div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
-
-			<div class="signup">
-				<form action="" id="VIGO TENDER MANAGEMENT SYSTEMS">
-					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="User Name" value="" id="UserName">
-          <input type="text" name="Last Name" value="" id="LastName">
-					<input type="text" name="Email" value="" id="Email">
-					<input type="text" name="Password" value="" id="Password">
-          <input type="text" name="Confirm password" value="" id="ConfirmPassword">					
-          <a href="SIGNING PAGE.html"><button type="button">submit</button></a>
-				</form>
-			</div>
-
-			
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="main.js"></script>
-    
-  
+	
+	<img src="Tender management.jpg" alt="js.basic" width="1500px" height="300px">
 </body>
 </html>
+<title>VICO TENDER MANAGEMENT SYSTEMS</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+<script>
+function validate()
+ {
+
+	  if(document.f1.firstName.value=="")
+     {
+		  alert("enter first name");
+		  document.f1.firstName.focus();
+		return false;
+	 }else
+
+	  if(document.f1.lastName.value=="")
+     {
+		  alert("enter last name");
+		  document.f1.lastName.focus();
+		return false;
+	 }else
+
+	 if(document.f1.userType.value=="")
+     {
+		  alert("enter usertype");
+		  document.f1.userType.focus();
+		return false;
+	 }else
+
+	 if(document.f1.age.value=="")
+     {
+		  alert("enter age");
+		  document.f1.age.focus();
+		return false;
+	 }else
+
+	 if(document.f1.sex.value=="")
+     {
+		  alert("enter sex");
+		  document.f1.sex.focus();
+		return false;
+	 }else
+	 
+	 if(document.f1.qualification.value=="")
+     {
+		  alert("enter qualification");
+		  document.f1.qualification.focus();
+		return false;
+	 }else
+	 
+	 if(document.f1.occupation.value=="")
+     {
+		  alert("enter occupation");
+		  document.f1.occupation.focus();
+		return false;
+	 }else
+
+	 	 if(document.f1.company.value=="")
+     {
+		  alert("enter company");
+		  document.f1.company.focus();
+		return false;
+	 }else
+	 
+	 	 if(document.f1.homeAddress.value=="")
+     {
+		  alert("enter homeAddress");
+		  document.f1.homeAddress.focus();
+		return false;
+	 }else
+	 
+	 	 if(document.f1.companyAddress.value=="")
+     {
+		  alert("enter commpany Address");
+		  document.f1.companyAddress.focus();
+		return false;
+	 }else
+	 
+	 	 	 if(document.f1.email.value=="")
+     {
+		  alert("enter email");
+		  document.f1.email.focus();
+		return false;
+	 }else
+	 
+	 	 	 if(document.f1.phoneNo.value=="")
+     {
+		  alert("enter phoneNo");
+		  document.f1.phoneNo.focus();
+		return false;
+	 }else
+	 
+	 	 if(document.f1.username.value=="")
+     {
+		  alert("enter username");
+		  document.f1.username.focus();
+		return false;
+	 }else
+	 
+
+	 if(document.f1.password.value=="")
+     {
+		  alert("enter password");
+		  document.f1.password.focus();
+		return false;
+	 }else
+	 
+	 if(document.f1.retypePassword.value=="")
+     {
+		  alert("enter retypePassword");
+		  document.f1.retypePassword.focus();
+		return false;
+	 }else
+	 return true;
+	 }
+	 
+	 
+	 
+</Script>
+</head>
+<body>
+
+<div id="content">
+<div id="back">
+<!-- header begins -->
+<div id="header"> 
+	<div id="logo">
+		<h1 align="center"><a href="#"> <FONT SIZE="8" COLOR="#000000"> VICO TENDER MANAGEMENT SYSTEMS </FONT> </a></h1>
+		
+  <div id="menu">
+		<ul>
+			<li id="button1"><a href="HOME PAGE.HTML" title="">Home</a></li>
+			<li id="button4"><a href="ABOUT.HTML" title="">About</a></li>
+			<li id="button5"><a href="CONTACT.HTML" title="">Contact</a></li>
+		</ul>
+ </div>
+ </div>
+ <form name="f1" action="Add_User.jsp" method="post" align="center" onSubmit="return validate()">
+<!-- <br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+
+ <table border="0"  align="center">
+<tr>
+<td>
+<fieldset>
+<p>
+<font size="3">
+<legend>
+<font color="black" size="10"><b>Fill The Details</b></font>
+</legend>
+</font>
+</p>
+<title>signIn</title>
+
+<font color="black" size="5" align="center">
+
+<b><pre>First Name     :  </b><input type="text"  name="firstName" size="5">*</pre>
+
+<b><pre>Last Name      :  </b><input type="text"   name="lastName" size="5">*</pre>
+
+<b><pre>UserType       :  </b><select name="userType"><option value="select-one">-Select One-</option><option value="buyer">Buyer</option><option value="programmer">programmer</option></select>*</pre>
+
+<b><pre>Age            :  </b><input type="text"   name="age" size="5">*</pre>
+
+<b><pre>Gender         :  </b><select name="sex"><option value="select-one">-Select One-</option><option value="Male">Male</option><option value="Female">Female</option></select>*</pre>
+
+<b><pre>Qualification  :  </b><input type="text"   name="qualification" size="5">*</pre>
+
+<b><pre>Occupation     :  </b><input type="text"   name="occupation" size="5">*</pre>
+
+<b><pre>Company        :  </b><input type="text"   name="company" size="5">*</pre>
+
+<b><pre>HomeAddress    :  </b><textarea name="homeAddress" rows="3" cols="5"></textarea>*
+
+<b><pre>CompanyAddress :  </b><textarea name="companyAddress" rows="3" cols="5"></textarea>*
+ 
+<b><pre>E-Mail Id      :  </b><input type="text"  value=" " name="email" size="5">*</pre>
+
+<b><pre>ContactNo      :  </b><input type="text"  value=" " name="phoneNo" size="5"><a href="#"></a>*</pre>
+
+<font size="3">
+<legend>
+<font color="black" size="10"><b>user-ID and password</b></font>
+</legend>
+</font>
+
+<b><pre>User Name     :  </b><input type="text"  name="username" size="5">*</pre>
+
+<b><pre>PassWord       :  </b><input type="password"  name="password" size="5">*</pre>
+
+<b><pre>Retype Password:  </b><input type="Password"  name="retypePassword" size="5">*</pre>
+
+
+<table border="0">
+<tr><td>
+
+</td><td><a href="SIGNING PAGE.html"><button type="button">submit</button></a>
+
+<input type="reset" value="reset"></td></tr></table>
+
+</fieldset> 
+</td>
+</tr>
+</table>
+</form>
+
+
+<!-- header ends -->
+<!-- content begins -->
+</div>
+</div>
+ 
+<div id="footer">
+Copyright &copy; 2023.Privacy Policy | Terms of Use
+	</div>
+	<!DOCTYPE html>
+	<html>
+	  <head>
+		<title>LOGIN PAGE </title>
+	  </head>
+	  <body bgcolor="lightcyan">
+		
+	  </body>
+	</html>
+	
+	
